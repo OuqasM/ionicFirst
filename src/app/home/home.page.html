@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Calculatrice
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--<ion-button routerLink="/calcul" >Calculatrise</ion-button>-->
+<div id="container">
+  <ion-button  color="tertiary" (click)="goToCalcul()">Calculatrice <ion-icon name="calculator-outline"></ion-icon></ion-button><br>
+  <ion-button color="success"  fill="outline" routerLink="/add" >
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="danger"   fill="outline"routerLink="/sub" >
+    <ion-icon name="remove-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="primary"  fill="outline" routerLink="/mult" > 
+    <ion-icon name="close-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="secondary"  fill="outline" routerLink="/div" >/</ion-button>
+
+
+</div>
+  
+</ion-content>

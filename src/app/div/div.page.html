@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+    <ion-title>Division / </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+  <ion-list>
+   <ion-item  id="rounded">
+     <ion-input type="number"  placeholder="Enter X " [(ngModel)]="firstNumber"></ion-input>
+   </ion-item>
+   <ion-item  id="rounded">
+     <ion-input type="number"    placeholder="Enter Y " [(ngModel)]="secondNumber"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-grid>
+     <ion-row>
+       <ion-col><ion-button color="secondary"  expand="full" (click)="div()">/</ion-button></ion-col>
+       
+     </ion-row>
+   </ion-grid></ion-item>
+   <ion-item  id="rounded">
+      <ion-label  > Result =
+         <span class="result">
+          {{result}}
+        </span> 
+      </ion-label>
+   </ion-item>
+  </ion-list>
+ 
+</div>
+
+
+ </ion-content>
+ 

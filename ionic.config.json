@@ -1,0 +1,7 @@
+{
+  "name": "OumaimaHraichi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
